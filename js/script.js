@@ -1,4 +1,5 @@
-let size = 100;
-let doubleSize = size * 2;
-let minSize = (doubleSize * 2) - (size /2);
-document.write(minSize);
+alert('Hello World');
+
+let favoriteFood = "Lasagna";
+favoriteFood = "Shrimp Linguine"
+document.write(favoriteFood);
