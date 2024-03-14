@@ -15,6 +15,7 @@ let pokemonRepository = (function() {
         return pokemonList;
     }
 
+    //Adds Pokemon as a button in the page
     function addListItem(pokemon) {
         let pokemonList = document.querySelector(".pokemon-list");
         let listItem = document.createElement("li");
@@ -22,9 +23,10 @@ let pokemonRepository = (function() {
         button.innerText = pokemon.name;
         button.classList.add("button-class");
 
-        // calls showDetails function when button is clicked
+    // calls showDetails function when button is clicked
         button.addEventListener('click', function() {
-            showDetails(pokemon);});
+            showDetails(pokemon);
+        });
         
         listItem.appendChild(button);
         pokemonList.appendChild(listItem);
