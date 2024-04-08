@@ -34,10 +34,11 @@ h1 {
     padding: 15px;
     padding-bottom:30px;
     width: 100%;
-    max-width: 700px;
-    text-align: left;
+    max-width: 500px;
+    text-align: center;
     border-radius:25px;
     filter: drop-shadow(5px 5px 10px #494949);
+    text-transform: capitalize;
 }
   
 .modal-close {
@@ -53,9 +54,11 @@ h1 {
   
 .modal h1, img, p {
     margin-top: 0;
-    margin-left:20px;
 }
 
+.modal img {
+    scale: 120%;
+}
 
 .modal p {
     margin-bottom: 0;
@@ -76,6 +79,7 @@ h1 {
     -webkit-transition-duration: 0.4s;
     border: none;
     transition-duration: 0.4s;
+    text-transform: capitalize;
 }
 
 button:hover {
@@ -84,4 +88,29 @@ button:hover {
 
 li {
     list-style-type: none;
+}
+
+.pokemon-list {
+    display: grid;
+    grid-gap: 20px;
+}
+
+
+
+@media all and (max-width: 750px) {
+    .pokemon-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (min-width: 750px) and (max-width: 1200px) {
+    .pokemon-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .pokemon-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }

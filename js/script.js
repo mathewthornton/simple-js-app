@@ -21,6 +21,7 @@ let pokemonRepository = (function() {
         button.innerText = pokemon.name;
         button.classList.add("button-class");
 
+
     // calls showDetails function when button is clicked
         button.addEventListener('click', function() {
             showDetails(pokemon);
